@@ -1,0 +1,39 @@
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+    height: 25%;
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li.current-menu-item a {
+    color: $color-black;
+    background-color: $color-gold;
+    border-radius: 4px;
+}
+
+@include breakpoint($small) {
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+}

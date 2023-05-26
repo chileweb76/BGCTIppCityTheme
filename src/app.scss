@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'anton-regular';
+    src: url('https://bgctippcity/assets/fonts/anton-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zillaslab-regular';
+    src: url('https://bgctippcity/assets/fonts/zillaslab-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-header: 'Anton', sans-serif;
+$font-body: 'Zilla Slab', serif;
+
+$color-grey: #97a7b3;
+$color-gold: #ffd700;
+$color-black:  #232c33;
+
+//variables
+$xsmall: 600px;
+$small: 700px;
+$mid: 800px;
+$medium: 900px;
+$large: 1200px;
+$xlarge: 1800px;
+
+//mixins & placeholders
+@mixin breakpoint($size) {
+    @media (min-width: $size) {
+      @content;
+    }
+}
+
+@mixin xsmall($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+html,
+body {
+    font-size: 62.5%;
+    font-family: $font-body;
+    color: $color-grey;
+    background-color: $color-black;
+    
+}
+
+@import './sass/reset';
+@import './sass/typography';
+@import './sass/component/header';
+@import './sass/component/footer';

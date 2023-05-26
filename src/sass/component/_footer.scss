@@ -1,0 +1,15 @@
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+@include xsmall($xsmall) {
+    .footer-menu {
+        display: none;
+    }
+
+    .p-footer {
+        text-align: center;
+    }
+}

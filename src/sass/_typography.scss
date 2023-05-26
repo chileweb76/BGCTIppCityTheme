@@ -1,0 +1,222 @@
+h1 {
+    font-family: $font-header;
+    font-size: 2.5rem;
+    color: $color-gold;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+a {
+    font-size: 1rem;
+    padding: 1rem;
+
+    &:hover {
+        color: $color-gold;
+    }
+}
+
+nav.footer-menu a {
+    font-size: 1rem
+}
+
+.p-footer {
+    font-size: .8rem;
+    margin-top: 3rem;
+}
+
+.contact {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@include breakpoint($xsmall) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 1rem
+    }
+
+    .p-footer {
+        font-size: 1rem;
+    }
+
+    .contact {
+        font-size: 1.4rem;
+    }
+}
+
+
+@include breakpoint($small) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 1.2rem
+    }
+
+    .p-footer {
+        font-size: 1rem;
+    }
+
+    .contact {
+        font-size: 1.8rem;
+    }
+}
+
+@include breakpoint($mid) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 1.6rem
+    }
+
+    .p-footer {
+        font-size: 1.4rem;
+    }
+
+    .contact {
+        font-size: 2rem;
+    }
+}
+
+@include breakpoint($medium) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+
+    a {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 2rem
+    }
+
+    .p-footer {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        font-size: 2.5rem;
+    }
+}
+
+@include breakpoint($large) {
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 5rem;
+    }
+
+    a {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 2.4rem
+    }
+
+    .p-footer {
+        font-size: 2rem;
+    }
+
+    .contact {
+        font-size: 3rem;
+    }
+}
+
+@include breakpoint($xlarge) {
+    h1 {
+        font-size: 7rem;
+    }
+    
+    h2 {
+        font-size: 6rem;
+    }
+    
+    a {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 4rem;
+    }
+
+    nav.footer-menu a {
+        font-size: 3.4rem
+    }
+
+    .p-footer {
+        font-size: 3rem;
+    }
+
+    .contact {
+        font-size: 4rem;
+    }
+}
