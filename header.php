@@ -9,17 +9,30 @@
 <body <?php body_class(); ?>>
     <header> 
         <div class="header-container">
-            <img class="logo" />
-            <div> 
+            <div class="logo">
+                <?php 
+                    if( has_custom_logo() ) {
+                    the_custom_logo(); 
+                    }else{
+                        ?>
+                            <a class="page-title" href="<?php echo home_url( '/' ); ?>"<span><?php bloginfo( 'name' ); ?></span></a>
+                            <p><?php bloginfo( 'description'); ?></p>
+                        <?php
+                    }
+                    ?>
+            </div>
+            <div class="title"> 
                 <h1>Barnes </h1>
                 <h2>Tipp City </h2>
                 <section class="contact-section"> 
                     <a class="contact"> phone </a>
                     <a class="contact"> email </a>
                 </section>
+            </div>
+        </div>
                 <nav class="nav-bar">
                     <?php wp_nav_menu( array( 'theme_location' => 'bgctippcity_main_menu', 'depth' => 2)); ?>
                 </nav>
-            </div>
+            
         </div>
     </header>

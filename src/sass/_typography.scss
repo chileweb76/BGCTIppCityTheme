@@ -12,6 +12,18 @@ h2 {
     margin: 1rem 0;
 }
 
+.article-h2 {
+    text-align: start;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
 p{
     font-size: 1.2rem;
     margin-top: 2rem;
@@ -19,11 +31,15 @@ p{
 
 a {
     font-size: 1rem;
-    padding: 1rem;
+    
 
     &:hover {
         color: $color-gold;
     }
+}
+
+.widget-wrapper a {
+    font-size: .6rem;
 }
 
 nav.footer-menu a {
@@ -40,6 +56,16 @@ nav.footer-menu a {
     margin-top: 1rem;
 }
 
+
+.meta-info p {
+    font-size: .8rem;
+    margin-top: 1rem;
+
+    & a{
+        font-size: .8rem;
+    }
+}
+
 @include breakpoint($xsmall) {
     h1 {
         font-size: 3rem;
@@ -49,12 +75,24 @@ nav.footer-menu a {
         font-size: 2rem;
     }
 
-    a {
-        font-size: 1.6rem;
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
     }
 
     p {
+        font-size: 1.6rem;
+    }
+
+    a {
         font-size: 1.2rem;
+    }
+
+    .widget-wrapper a {
+        font-size: .8rem;
     }
 
     nav.footer-menu a {
@@ -68,6 +106,15 @@ nav.footer-menu a {
     .contact {
         font-size: 1.4rem;
     }
+
+    .meta-info p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 1rem;
+        }
+    }
 }
 
 
@@ -80,12 +127,24 @@ nav.footer-menu a {
         font-size: 2.5rem;
     }
 
-    a {
-        font-size: 2rem;
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
     }
 
     p {
+        font-size: 2rem;
+    }
+
+    a {
         font-size: 1.8rem;
+    }
+
+    .widget-wrapper a {
+        font-size: 1rem;
     }
 
     nav.footer-menu a {
@@ -99,6 +158,15 @@ nav.footer-menu a {
     .contact {
         font-size: 1.8rem;
     }
+
+    .meta-info p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 1rem;
+        }
+    }
 }
 
 @include breakpoint($mid) {
@@ -110,12 +178,24 @@ nav.footer-menu a {
         font-size: 3rem;
     }
 
-    a {
-        font-size: 2.5rem;
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
     }
 
     p {
+        font-size: 2.5rem;
+    }
+
+    a {
         font-size: 2rem;
+    }
+
+    .widget-wrapper a {
+        font-size: 1.6rem;
     }
 
     nav.footer-menu a {
@@ -129,6 +209,15 @@ nav.footer-menu a {
     .contact {
         font-size: 2rem;
     }
+
+    .meta-info p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 1.4rem;
+        }
+    }
 }
 
 @include breakpoint($medium) {
@@ -140,12 +229,24 @@ nav.footer-menu a {
         font-size: 4rem;
     }
 
-    a {
-        font-size: 3rem;
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
     }
 
     p {
+        font-size: 3rem;
+    }
+
+    a {
         font-size: 2.5rem;
+    }
+
+    .widget-wrapper a {
+        font-size: 2rem;
     }
 
     nav.footer-menu a {
@@ -159,6 +260,15 @@ nav.footer-menu a {
     .contact {
         font-size: 2.5rem;
     }
+
+    .meta-info p {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 1.8rem;
+        }
+    }
 }
 
 @include breakpoint($large) {
@@ -170,12 +280,24 @@ nav.footer-menu a {
         font-size: 5rem;
     }
 
-    a {
-        font-size: 4rem;
+    h3 {
+        font-size: 4.5rem;
+    }
+
+    h4 {
+        font-size: 3rem;
     }
 
     p {
+        font-size: 4rem;
+    }
+
+    a {
         font-size: 3rem;
+    }
+
+    .widget-wrapper a {
+        font-size: 2.4rem;
     }
 
     nav.footer-menu a {
@@ -189,6 +311,15 @@ nav.footer-menu a {
     .contact {
         font-size: 3rem;
     }
+
+    .meta-info p {
+        font-size: 2rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 2rem;
+        }
+    }
 }
 
 @include breakpoint($xlarge) {
@@ -199,13 +330,25 @@ nav.footer-menu a {
     h2 {
         font-size: 6rem;
     }
+
+    h3 {
+        font-size: 5.5rem;
+    }
+
+    h4 {
+        font-size: 4rem;
+    }
     
-    a {
+    p {
         font-size: 5rem;
     }
 
-    p {
+    a {
         font-size: 4rem;
+    }
+
+    .widget-wrapper a {
+        font-size: 3.4rem;
     }
 
     nav.footer-menu a {
@@ -218,5 +361,14 @@ nav.footer-menu a {
 
     .contact {
         font-size: 4rem;
+    }
+
+    .meta-info p {
+        font-size: 3rem;
+        margin-top: 1rem;
+    
+        & a{
+            font-size: 3rem;
+        }
     }
 }

@@ -1,0 +1,58 @@
+.blog-h1{
+    margin-top: 5rem;
+}
+
+
+.container {
+    max-width: 75%;
+    margin: auto;
+}
+
+.blog-items {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "article sidebar";
+}
+
+.blog-items article{
+    grid-area: article;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding-top: 5rem;
+    background-color: $color-grey;
+    color: $color-black;
+    border-radius: 1rem;
+}
+
+.meta-info {
+    margin: 2rem;
+
+    & .date-by-cat {
+        margin: 2rem;
+    }
+}
+
+img {
+    margin-left: 2rem;
+    height: 50%;
+    width: 50%
+}
+
+.widget-wrapper {
+    margin: 3rem;
+}
+
+@include xsmall($xsmall) {
+    .meta-info {
+        display: flex;
+        flex-direction: column;
+
+        & .date-by-cat {
+            margin: .3rem 0 1rem; 
+        }
+    }
+}

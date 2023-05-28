@@ -4,6 +4,10 @@
     margin: 1rem;
 }
 
+.footer-menu a {
+    margin-right: 1rem
+}
+
 @include xsmall($xsmall) {
     .footer-menu {
         display: none;

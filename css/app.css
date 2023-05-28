@@ -46,6 +46,18 @@ h2 {
   margin: 1rem 0;
 }
 
+.article-h2 {
+  text-align: start;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 1.2rem;
   margin-top: 2rem;
@@ -53,10 +65,13 @@ p {
 
 a {
   font-size: 1rem;
-  padding: 1rem;
 }
 a:hover {
   color: #ffd700;
+}
+
+.widget-wrapper a {
+  font-size: 0.6rem;
 }
 
 nav.footer-menu a {
@@ -73,6 +88,14 @@ nav.footer-menu a {
   margin-top: 1rem;
 }
 
+.meta-info p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+.meta-info p a {
+  font-size: 0.8rem;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 3rem;
@@ -80,11 +103,20 @@ nav.footer-menu a {
   h2 {
     font-size: 2rem;
   }
-  a {
-    font-size: 1.6rem;
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
   }
   p {
+    font-size: 1.6rem;
+  }
+  a {
     font-size: 1.2rem;
+  }
+  .widget-wrapper a {
+    font-size: 0.8rem;
   }
   nav.footer-menu a {
     font-size: 1rem;
@@ -94,6 +126,13 @@ nav.footer-menu a {
   }
   .contact {
     font-size: 1.4rem;
+  }
+  .meta-info p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 1rem;
   }
 }
 @media (min-width: 700px) {
@@ -103,11 +142,20 @@ nav.footer-menu a {
   h2 {
     font-size: 2.5rem;
   }
-  a {
-    font-size: 2rem;
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.8rem;
   }
   p {
+    font-size: 2rem;
+  }
+  a {
     font-size: 1.8rem;
+  }
+  .widget-wrapper a {
+    font-size: 1rem;
   }
   nav.footer-menu a {
     font-size: 1.2rem;
@@ -118,6 +166,13 @@ nav.footer-menu a {
   .contact {
     font-size: 1.8rem;
   }
+  .meta-info p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 800px) {
   h1 {
@@ -126,11 +181,20 @@ nav.footer-menu a {
   h2 {
     font-size: 3rem;
   }
-  a {
-    font-size: 2.5rem;
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
   }
   p {
+    font-size: 2.5rem;
+  }
+  a {
     font-size: 2rem;
+  }
+  .widget-wrapper a {
+    font-size: 1.6rem;
   }
   nav.footer-menu a {
     font-size: 1.6rem;
@@ -141,6 +205,13 @@ nav.footer-menu a {
   .contact {
     font-size: 2rem;
   }
+  .meta-info p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 900px) {
   h1 {
@@ -149,11 +220,20 @@ nav.footer-menu a {
   h2 {
     font-size: 4rem;
   }
-  a {
-    font-size: 3rem;
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 2.5rem;
   }
   p {
+    font-size: 3rem;
+  }
+  a {
     font-size: 2.5rem;
+  }
+  .widget-wrapper a {
+    font-size: 2rem;
   }
   nav.footer-menu a {
     font-size: 2rem;
@@ -164,6 +244,13 @@ nav.footer-menu a {
   .contact {
     font-size: 2.5rem;
   }
+  .meta-info p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 1200px) {
   h1 {
@@ -172,11 +259,20 @@ nav.footer-menu a {
   h2 {
     font-size: 5rem;
   }
-  a {
-    font-size: 4rem;
+  h3 {
+    font-size: 4.5rem;
+  }
+  h4 {
+    font-size: 3rem;
   }
   p {
+    font-size: 4rem;
+  }
+  a {
     font-size: 3rem;
+  }
+  .widget-wrapper a {
+    font-size: 2.4rem;
   }
   nav.footer-menu a {
     font-size: 2.4rem;
@@ -187,6 +283,13 @@ nav.footer-menu a {
   .contact {
     font-size: 3rem;
   }
+  .meta-info p {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 1800px) {
   h1 {
@@ -195,11 +298,20 @@ nav.footer-menu a {
   h2 {
     font-size: 6rem;
   }
-  a {
-    font-size: 5rem;
+  h3 {
+    font-size: 5.5rem;
+  }
+  h4 {
+    font-size: 4rem;
   }
   p {
+    font-size: 5rem;
+  }
+  a {
     font-size: 4rem;
+  }
+  .widget-wrapper a {
+    font-size: 3.4rem;
   }
   nav.footer-menu a {
     font-size: 3.4rem;
@@ -210,17 +322,32 @@ nav.footer-menu a {
   .contact {
     font-size: 4rem;
   }
+  .meta-info p {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .meta-info p a {
+    font-size: 3rem;
+  }
 }
-.header-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.logo {
+  text-align: center;
+  margin: auto;
+}
+.logo img {
+  margin: 2rem 0;
 }
 
-.logo {
-  width: 25%;
-  height: 25%;
-  margin: 2rem 5rem 2rem 5rem;
+.page-title {
+  font-size: 5rem;
+  margin-left: 5rem;
+}
+.page-title:hover {
+  color: #97a7b3;
+}
+
+.title {
+  width: 100%;
 }
 
 .contact-section {
@@ -239,6 +366,7 @@ li.current-menu-item a {
   color: #232c33;
   background-color: #ffd700;
   border-radius: 4px;
+  padding: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -255,6 +383,10 @@ li.current-menu-item a {
   margin: 1rem;
 }
 
+.footer-menu a {
+  margin-right: 1rem;
+}
+
 @media (max-width: 600px) {
   .footer-menu {
     display: none;
@@ -262,4 +394,61 @@ li.current-menu-item a {
   .p-footer {
     text-align: center;
   }
+}
+.blog-h1 {
+  margin-top: 5rem;
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+}
+
+.blog-items {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "article sidebar";
+}
+
+.blog-items article {
+  grid-area: article;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding-top: 5rem;
+  background-color: #97a7b3;
+  color: #232c33;
+  border-radius: 1rem;
+}
+
+.meta-info {
+  margin: 2rem;
+}
+.meta-info .date-by-cat {
+  margin: 2rem;
+}
+
+img {
+  margin-left: 2rem;
+  height: 50%;
+  width: 50%;
+}
+
+.widget-wrapper {
+  margin: 3rem;
+}
+
+@media (max-width: 600px) {
+  .meta-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .meta-info .date-by-cat {
+    margin: 0.3rem 0 1rem;
+  }
+}
+.site-main h2 {
+  margin-top: 5rem;
 }
