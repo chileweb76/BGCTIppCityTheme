@@ -1,3 +1,5 @@
+//Typography for all 
+
 h1 {
     font-family: $font-header;
     font-size: 2.5rem;
@@ -12,8 +14,10 @@ h2 {
     margin: 1rem 0;
 }
 
-.article-h2 {
+.article-h2 a {
     text-align: start;
+    font-size: 1.5rem;
+
 }
 
 h3 {
@@ -36,6 +40,20 @@ a {
     &:hover {
         color: $color-gold;
     }
+}
+
+.comment-reply-link {
+    font-size: .4rem;
+    margin-top: 1rem;
+}
+
+.comment-meta a {
+    font-size: .4rem;
+    margin-right: 1rem;
+}
+
+.comment-date a {
+    font-size: .4rem;
 }
 
 .widget-wrapper a {
@@ -75,6 +93,10 @@ nav.footer-menu a {
         font-size: 2rem;
     }
 
+    .article-h2 a {
+        font-size: 2rem;
+    }
+
     h3 {
         font-size: 1.8rem;
     }
@@ -89,6 +111,18 @@ nav.footer-menu a {
 
     a {
         font-size: 1.2rem;
+    }
+
+    .comment-reply-link {
+        font-size: .6rem;
+    }
+
+    .comment-meta a {
+        font-size: .6rem;
+    }
+
+    .comment-date a {
+        font-size: .6rem;
     }
 
     .widget-wrapper a {
@@ -127,6 +161,10 @@ nav.footer-menu a {
         font-size: 2.5rem;
     }
 
+    .article-h2 a {
+        font-size: 2.5rem;
+    }
+
     h3 {
         font-size: 2.5rem;
     }
@@ -136,11 +174,23 @@ nav.footer-menu a {
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     a {
         font-size: 1.8rem;
+    }
+
+    .comment-reply-link {
+        font-size: .8rem;
+    }
+
+    .comment-meta a {
+        font-size: .8rem;
+    }
+
+    .comment-date a {
+        font-size: .8rem;
     }
 
     .widget-wrapper a {
@@ -178,6 +228,10 @@ nav.footer-menu a {
         font-size: 3rem;
     }
 
+    .article-h2 a {
+        font-size: 3rem;
+    }
+
     h3 {
         font-size: 3rem;
     }
@@ -187,11 +241,23 @@ nav.footer-menu a {
     }
 
     p {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     a {
         font-size: 2rem;
+    }
+
+    .comment-reply-link {
+        font-size: 1.4rem;
+    }
+
+    .comment-meta a {
+        font-size: 1.4rem;
+    }
+
+    .comment-date a {
+        font-size: 1.4rem;
     }
 
     .widget-wrapper a {
@@ -228,6 +294,10 @@ nav.footer-menu a {
     h2 {
         font-size: 4rem;
     }
+    
+    .article-h2 a{
+        font-size: 4rem;
+    }
 
     h3 {
         font-size: 3.5rem;
@@ -238,11 +308,23 @@ nav.footer-menu a {
     }
 
     p {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     a {
         font-size: 2.5rem;
+    }
+
+    .comment-reply-link {
+        font-size: 1.8rem;
+    }
+
+    .comment-meta a {
+        font-size: 1.8rem;
+    }
+
+    .comment-date a {
+        font-size: 1.8rem;
     }
 
     .widget-wrapper a {
@@ -280,6 +362,10 @@ nav.footer-menu a {
         font-size: 5rem;
     }
 
+    .article-h2 a{
+        font-size: 5rem;
+    }
+
     h3 {
         font-size: 4.5rem;
     }
@@ -289,11 +375,23 @@ nav.footer-menu a {
     }
 
     p {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     a {
         font-size: 3rem;
+    }
+
+    .comment-reply-link {
+        font-size: 2.2rem;
+    }
+
+    .comment-meta a {
+        font-size: 2.2rem;
+    }
+
+    .comment-date a {
+        font-size: 2.2rem;
     }
 
     .widget-wrapper a {
@@ -331,6 +429,10 @@ nav.footer-menu a {
         font-size: 6rem;
     }
 
+    .article-h2 a {
+        font-size: 6rem;
+    }
+
     h3 {
         font-size: 5.5rem;
     }
@@ -340,11 +442,23 @@ nav.footer-menu a {
     }
     
     p {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     a {
         font-size: 4rem;
+    }
+
+    .comment-reply-link {
+        font-size: 3.2rem;
+    }
+
+    .comment-meta a {
+        font-size: 3.2rem;
+    }
+
+    .comment-date a {
+        font-size: 3.2rem;
     }
 
     .widget-wrapper a {

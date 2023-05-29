@@ -40,11 +40,89 @@ function bgctippcity_sidebars(){
         array(
             'name'  => 'Blog Sidebar',
             'id'    => 'sidebar-blog',
-            'description'   => 'This is the Blog Sidebar. You can add your widgets here. Added h4 headings to each widget',
+            'description'   => 'This is the Blog Sidebar. You can add your widgets here. Add h4 headings to each widget',
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
             'after_title'   => '</h4>'
         )
     );
+    register_sidebar(
+        array(
+            'name'  => 'Spcialization One',
+            'id'    => 'specialized-one',
+            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'before_widget' => '<div class="specialized-wrapper">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name'  => 'Spcialization Two',
+            'id'    => 'specialized-two',
+            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'before_widget' => '<div class="specialized-wrapper">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name'  => 'Spcialization Three',
+            'id'    => 'specialized-three',
+            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'before_widget' => '<div class="specialized-wrapper">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>'
+        )
+    );
+}
+
+function wpdocs_remove_website_field( $fields ) {
+	unset( $fields['url'] );
+	return $fields;
+}
+
+add_filter( 'comment_form_default_fields', 'wpdocs_remove_website_field' );
+
+// Remove comment time with at
+function not_default_comments( $comment, $args, $depth ) {
+    global $post;
+    $author_id = $post->post_author;
+    $GLOBALS['comment'] = $comment;
+?>
+    <li id="li-comment-<?php comment_ID(); ?>">
+        <article id="comment-<?php comment_ID(); ?>" <?php comment_class('clr'); ?>>
+            <!-- .comment-author -->
+            <div class="comment-details clr">
+                <header class="comment-meta">
+                    <cite class="fn"><?php comment_author_link(); ?></cite>
+                    <span class="comment-date">
+                    <?php printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+                        esc_url( get_comment_link( $comment->comment_ID ) ),
+                        get_comment_time( 'c' ),
+                        sprintf( _x( '%1$s', '1: date', 'bgctippcity' ), get_comment_date() )
+                    ); ?>
+                    </span><!-- .comment-date -->
+                </header><!-- .comment-meta -->
+                <?php if ( '0' == $comment->comment_approved ) : ?>
+                    <p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'bgctippcity' ); ?></p>
+                <?php endif; ?>
+                <div class="comment-content entry clr">
+                    <?php comment_text(); ?>
+                </div><!-- .comment-content -->
+                <div class="reply comment-reply-link">
+                    <?php comment_reply_link( array_merge( $args, array(
+                        'reply_text' => esc_html__( 'Reply', 'bgctippcity' ),
+                        'depth'      => $depth,
+                        'max_depth'  => $args['max_depth'] )
+                    ) ); ?>
+                </div><!-- .reply -->
+            </div><!-- .comment-details -->
+        </article><!-- #comment-## -->
+    <?php
 }
