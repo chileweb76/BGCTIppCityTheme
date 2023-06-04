@@ -1,5 +1,7 @@
 <?php
 
+require get_template_directory() . '/inc/customizer.php';
+
 function bgctippcity_load_scripts(){
     wp_register_style('bgctippcity-style', get_template_directory_uri() . '/css/app.css', [], wp_get_theme()->get('Version'), 'all');
     wp_enqueue_style('bgctippcity-style');
@@ -31,6 +33,10 @@ function bgctippcity_config(){
         'flex-height' => true,
         'flex-width' => true
     ));
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+
+    add_theme_support( 'title-tag');
 }
 add_action( 'after_setup_theme', 'bgctippcity_config', 0 );
 
@@ -143,3 +149,9 @@ function smartwp_reverse_comment_order( $comments ) {
     return array_reverse( $comments );
    }
    add_filter ('comments_array', 'smartwp_reverse_comment_order');
+
+   if ( ! function_exists( 'wp_body_open' ) ) {
+    function wp_body_open() {
+        do_action( 'wp_body_open' );
+    }
+   }

@@ -1,3 +1,16 @@
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.hero-image {
+    width: 25%;
+    height: 25%;
+    margin: 3rem;
+}
+
 .work-description {
     text-align: center;
 }
@@ -18,14 +31,10 @@
 
 .latest-blog {
     text-align: center;
-    margin-top: 3rem;
-    & img {
-        height: 60%;
-        width: 60%;
-    }
-}
-
-.post {
-    margin-top: 3rem;
-    margin-right: 5rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: $color-darkgrey;
+    color: $color-black;
+    width: 40%;
+    border-radius: 1rem;
 }

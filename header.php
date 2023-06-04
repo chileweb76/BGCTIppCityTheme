@@ -7,6 +7,7 @@
     <?php wp_head(); ?>
     </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
     <header> 
         <div class="header-container">
             <div class="logo">
@@ -21,12 +22,19 @@
                     }
                     ?>
             </div>
+            <?php 
+            $title1 = get_theme_mod( 'set_header_title1', 'Title of Site' );
+            $title2 = get_theme_mod( 'set_header_title2', 'Header Location Title' );
+            $phone_number = get_theme_mod( 'set_phone_number', 'Phone Number' );
+            $email = get_theme_mod( 'set_email', 'Email' );
+            ?>
+
             <div class="title"> 
-                <h1>Barnes </h1>
-                <h2>Tipp City </h2>
+                <h1><?php echo $title1; ?> </h1>
+                <h2><?php echo $title2; ?></h2>
                 <section class="contact-section"> 
-                    <a class="contact"> phone </a>
-                    <a class="contact"> email </a>
+                    <a class="contact" href="tel:<?php echo $phone_number; ?>"> <?php echo $phone_number; ?> </a>
+                    <a class="contact" href="email:<?php echo $email; ?>"><?php echo $email; ?> </a>
                 </section>
             </div>
         </div>

@@ -18,6 +18,7 @@ $font-body: 'Zilla Slab', serif;
 $color-grey: #97a7b3;
 $color-gold: #ffd700;
 $color-black:  #232c33;
+$color-darkgrey: #7e7f9a;
 
 //variables
 $xsmall: 600px;
@@ -59,4 +60,5 @@ body {
 @import './sass/component/comments';
 @import './sass/component/search';
 @import './sass/single';
-@import './sass/component/404'
+@import './sass/component/404';
+@import './sass/wp-added';

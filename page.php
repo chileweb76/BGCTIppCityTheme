@@ -2,15 +2,21 @@
 
 <div class="content-area"> 
     <main class="site-main"> 
+        <?php 
+        $left_image = wp_get_attachment_url( get_theme_mod( 'set_left_image' ) );
+        $right_image = wp_get_attachment_url( get_theme_mod( 'set_right_image' ) );
+        $title1 = get_theme_mod( 'set_hero_title1', 'Add custom description' );
+        $title2 = get_theme_mod( 'set_hero_title2', 'Add custom description' );
+        $subtitle = get_theme_mod( 'set_hero_subtitle', 'Add custom description' );
+        ?>
         <section class="hero">
-            <img class="left-image" />
+            <img class="hero-image" src="<?php echo $left_image ?>" alt="Left side image"/>
             <div class="work-description"> 
-                <h2>Fully Insured</h2>
-                <h3>Handyman </h3>
-                <p>Available for small jobs</p>
-                <p>One or two day turnaround</p>
+                <h2><?php echo $title1; ?></h2>
+                <h3><?php echo $title2; ?></h3>
+                <p><?php echo nl2br( $subtitle ); ?></p>
             </div>
-            <img class="right-image" />
+            <img class="hero-image" src="<?php echo $right_image ?>" alt="right side image" />
         </section>
         <section>
             <h2>Specialized in</h2>

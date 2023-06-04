@@ -8,7 +8,6 @@
                     the_post();
                     get_template_part( 'parts/content', 'single'); 
                     ?>
-                    //css in blog under pagination
                     <div class="bgctippcity-pagination">
                         <div class="pages next">
                             <?php next_post_link( '&laquo; %link' ); ?>

@@ -536,6 +536,16 @@ li.current-menu-item a {
     text-align: center;
   }
 }
+.blog-article {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #7e7f9a;
+  color: #232c33;
+  width: 90%;
+  border-radius: 1rem;
+}
+
 .blog h1 {
   margin-top: 5rem;
 }
@@ -597,25 +607,10 @@ li.current-menu-item a {
   width: 40%;
 }
 
-.latest-blog {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  grid-template-areas: "post-image info";
-}
-
-.post {
-  grid-area: info;
-}
-
-.latest-blog a {
-  grid-area: post-image;
-}
-
 .latest-blog img {
   margin-top: 2rem;
-  height: 75%;
-  width: 75%;
+  height: 25;
+  width: 25%;
 }
 
 .post-image {
@@ -668,6 +663,19 @@ li.current-menu-item a {
   margin-top: 5rem;
 }
 
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.hero-image {
+  width: 25%;
+  height: 25%;
+  margin: 3rem;
+}
+
 .work-description {
   text-align: center;
 }
@@ -688,16 +696,12 @@ li.current-menu-item a {
 
 .latest-blog {
   text-align: center;
-  margin-top: 3rem;
-}
-.latest-blog img {
-  height: 60%;
-  width: 60%;
-}
-
-.post {
-  margin-top: 3rem;
-  margin-right: 5rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #7e7f9a;
+  color: #232c33;
+  width: 40%;
+  border-radius: 1rem;
 }
 
 .comments-title {
@@ -806,4 +810,116 @@ li.current-menu-item a {
 .widget ul li {
   text-align: center;
   margin-top: 2rem;
+}
+
+/* WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  -webkit-clip-path: none;
+          clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
