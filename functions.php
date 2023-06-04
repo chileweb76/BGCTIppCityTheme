@@ -126,3 +126,20 @@ function not_default_comments( $comment, $args, $depth ) {
         </article><!-- #comment-## -->
     <?php
 }
+
+add_filter( 'comment_form_default_fields', 'wc_comment_form_change_cookies' );
+function wc_comment_form_change_cookies( $fields ) {
+	$commenter = wp_get_current_commenter();
+
+	$consent   = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+
+	$fields['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' .
+					 '<label for="wp-comment-cookies-consent">'.__('Save my name and email for future comments on my computer.', 'textdomain').'</label></p>';
+	return $fields;
+}
+
+//Reverse comment order
+function smartwp_reverse_comment_order( $comments ) {
+    return array_reverse( $comments );
+   }
+   add_filter ('comments_array', 'smartwp_reverse_comment_order');

@@ -1,36 +1,57 @@
-.blog-h1{
+.blog h1{
     margin-top: 5rem;
 }
 
+.archive-description {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
 
 .container {
-    max-width: 75%;
+    max-width: 90%;
     margin: auto;
+    display: flex;
+}
+
+@include xsmall($small) {
+    .container {
+        display: block;
+    }
+
+    .sidebar {
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+}
+
+.archive-items {
+    width: 100%;
 }
 
 .blog-items {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "article sidebar";
-}
-
-.blog-items article{
-    grid-area: article;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
-    grid-area: sidebar;
     margin-top: 5rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     background-color: $color-grey;
     color: $color-black;
     border-radius: 1rem;
+    text-align: center;
+    width: 50%;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+        }
 }
 
 .meta-info {
     margin: 2rem;
+    text-align: center;
 
     & .date-by-cat {
         margin: 2rem;
@@ -38,9 +59,9 @@
 }
 
 .meta-info img {
-    margin-left: 2rem;
-    height: 50%;
-    width: 50%
+    height: 40%;
+    width: 40%
+
 }
 
 .latest-blog {
@@ -79,13 +100,31 @@
     margin-right: 2rem;
 }
 
-@include xsmall($xsmall) {
-    .meta-info {
-        display: flex;
-        flex-direction: column;
+.sidebar li {
+    margin-top: 1rem;
+}
 
-        & .date-by-cat {
-            margin: .3rem 0 1rem; 
-        }
-    }
+//pagination
+.bgctippcity-pagination{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    margin-top: 40px;
+}
+.nav-links .page-numbers{
+    padding: 10px 15px;
+    display: inline-block;
+}
+.nav-links .current{
+    background-color: $color-gold;
+    color: $color-black;
+}
+.nav-links .next,
+.nav-links .prev{
+    background-color: transparent;
+}
+.nav-links .prev{
+    padding-left: 0;
 }

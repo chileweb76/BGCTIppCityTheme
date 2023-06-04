@@ -25,7 +25,7 @@ if ( post_password_required() ) {
 <?php
 $comment_args = array(
         'comment_notes_before'  => '<p class="required-message">'. __( 'Fields with ( * ) are required. Your email address will not be published', 'bgctippcity' ) .'</p>',
-        'logged_in_as' => '<p></p>',
+        'logged_in_as'         => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>.<br /> <a href="%3$s" title="Log out of this account">Log out?</a>' ), get_edit_user_link(), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
         'title_reply' => __( '<h4>Tell us what you think</h4>', 'bgctippcity'  ),
         'comment_field' => '<p class="comment-words">' .
             '<label for="comment">' . __( 'Comment:', 'bgctippcity' ) . '</label>' .

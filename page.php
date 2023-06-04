@@ -44,7 +44,7 @@
             if($postslist->have_posts() ):
             ?>
             <h2>Latest Posts</h2>
-            <div class="container">
+            <div class="container-home">
                     <?php 
                         while( $postslist->have_posts() ) : $postslist->the_post();
                             ?>

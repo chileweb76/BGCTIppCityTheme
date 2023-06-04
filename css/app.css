@@ -71,12 +71,22 @@ a:hover {
   color: #ffd700;
 }
 
+.nav-links .current,
+.pages {
+  font-size: 1rem;
+}
+
 .comment-reply-link {
   font-size: 0.4rem;
   margin-top: 1rem;
 }
 
 .comment-meta a {
+  font-size: 0.4rem;
+  margin-right: 1rem;
+}
+
+.fn {
   font-size: 0.4rem;
   margin-right: 1rem;
 }
@@ -133,10 +143,17 @@ nav.footer-menu a {
   a {
     font-size: 1.2rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 1.2rem;
+  }
   .comment-reply-link {
     font-size: 0.6rem;
   }
   .comment-meta a {
+    font-size: 0.6rem;
+  }
+  .fn {
     font-size: 0.6rem;
   }
   .comment-date a {
@@ -184,10 +201,17 @@ nav.footer-menu a {
   a {
     font-size: 1.8rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 1.8rem;
+  }
   .comment-reply-link {
     font-size: 0.8rem;
   }
   .comment-meta a {
+    font-size: 0.8rem;
+  }
+  .fn {
     font-size: 0.8rem;
   }
   .comment-date a {
@@ -235,10 +259,17 @@ nav.footer-menu a {
   a {
     font-size: 2rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 2rem;
+  }
   .comment-reply-link {
     font-size: 1.4rem;
   }
   .comment-meta a {
+    font-size: 1.4rem;
+  }
+  .fn {
     font-size: 1.4rem;
   }
   .comment-date a {
@@ -286,10 +317,17 @@ nav.footer-menu a {
   a {
     font-size: 2.5rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 2.5rem;
+  }
   .comment-reply-link {
     font-size: 1.8rem;
   }
   .comment-meta a {
+    font-size: 1.8rem;
+  }
+  .fn {
     font-size: 1.8rem;
   }
   .comment-date a {
@@ -337,10 +375,17 @@ nav.footer-menu a {
   a {
     font-size: 3rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 3rem;
+  }
   .comment-reply-link {
     font-size: 2.2rem;
   }
   .comment-meta a {
+    font-size: 2.2rem;
+  }
+  .fn {
     font-size: 2.2rem;
   }
   .comment-date a {
@@ -388,10 +433,17 @@ nav.footer-menu a {
   a {
     font-size: 4rem;
   }
+  .nav-links .current,
+  .pages {
+    font-size: 4rem;
+  }
   .comment-reply-link {
     font-size: 3.2rem;
   }
   .comment-meta a {
+    font-size: 3.2rem;
+  }
+  .fn {
     font-size: 3.2rem;
   }
   .comment-date a {
@@ -484,46 +536,65 @@ li.current-menu-item a {
     text-align: center;
   }
 }
-.blog-h1 {
+.blog h1 {
   margin-top: 5rem;
+}
+
+.archive-description {
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }
 
 .container {
-  max-width: 75%;
+  max-width: 90%;
   margin: auto;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .sidebar {
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+}
+.archive-items {
+  width: 100%;
 }
 
 .blog-items {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: auto;
-  grid-template-areas: "article sidebar";
-}
-
-.blog-items article {
-  grid-area: article;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar {
-  grid-area: sidebar;
   margin-top: 5rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   background-color: #97a7b3;
   color: #232c33;
   border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .meta-info {
   margin: 2rem;
+  text-align: center;
 }
 .meta-info .date-by-cat {
   margin: 2rem;
 }
 
 .meta-info img {
-  margin-left: 2rem;
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 40%;
 }
 
 .latest-blog {
@@ -561,15 +632,38 @@ li.current-menu-item a {
   margin-right: 2rem;
 }
 
-@media (max-width: 600px) {
-  .meta-info {
-    display: flex;
-    flex-direction: column;
-  }
-  .meta-info .date-by-cat {
-    margin: 0.3rem 0 1rem;
-  }
+.sidebar li {
+  margin-top: 1rem;
 }
+
+.bgctippcity-pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  margin-top: 40px;
+}
+
+.nav-links .page-numbers {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.nav-links .current {
+  background-color: #ffd700;
+  color: #232c33;
+}
+
+.nav-links .next,
+.nav-links .prev {
+  background-color: transparent;
+}
+
+.nav-links .prev {
+  padding-left: 0;
+}
+
 .site-main h2 {
   margin-top: 5rem;
 }
@@ -594,6 +688,16 @@ li.current-menu-item a {
 
 .latest-blog {
   text-align: center;
+  margin-top: 3rem;
+}
+.latest-blog img {
+  height: 60%;
+  width: 60%;
+}
+
+.post {
+  margin-top: 3rem;
+  margin-right: 5rem;
 }
 
 .comments-title {
@@ -618,4 +722,88 @@ li.current-menu-item a {
   border-radius: 4px;
   padding: 1rem;
   background-color: #ffd700;
+}
+
+.attachment-post-thumbnail {
+  width: 60%;
+  height: 60%;
+}
+
+.searchform input[type=text] {
+  padding: 7px 10px;
+  border: 1px solid #C6C6C6;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.searchform input[type=submit] {
+  padding: 1.1rem 1rem;
+  background: #ffd700;
+  color: #232c33;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.searchform div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchform input[type=text] {
+  max-width: 50%;
+}
+
+.searchform input[type=submit] {
+  max-width: 50%;
+}
+
+.search-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  text-align: center;
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+.single-container {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.comment-respond {
+  margin-left: 3rem;
+}
+
+.post-image {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+.error-404 {
+  margin: auto;
+}
+
+.widget ul {
+  display: flex;
+  flex-direction: column;
+}
+.widget ul li {
+  text-align: center;
+  margin-top: 2rem;
 }

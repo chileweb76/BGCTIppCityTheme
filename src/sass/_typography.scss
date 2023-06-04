@@ -36,10 +36,14 @@ p{
 a {
     font-size: 1rem;
     
-
     &:hover {
         color: $color-gold;
     }
+}
+
+.nav-links .current,
+.pages {
+    font-size: 1rem;
 }
 
 .comment-reply-link {
@@ -48,6 +52,11 @@ a {
 }
 
 .comment-meta a {
+    font-size: .4rem;
+    margin-right: 1rem;
+}
+
+.fn {
     font-size: .4rem;
     margin-right: 1rem;
 }
@@ -84,6 +93,7 @@ nav.footer-menu a {
     }
 }
 
+//min-width 600px
 @include breakpoint($xsmall) {
     h1 {
         font-size: 3rem;
@@ -113,11 +123,20 @@ nav.footer-menu a {
         font-size: 1.2rem;
     }
 
+    .nav-links .current,
+    .pages {
+        font-size: 1.2rem;
+    }
+
     .comment-reply-link {
         font-size: .6rem;
     }
 
     .comment-meta a {
+        font-size: .6rem;
+    }
+
+    .fn {
         font-size: .6rem;
     }
 
@@ -151,7 +170,7 @@ nav.footer-menu a {
     }
 }
 
-
+//min-width 700px
 @include breakpoint($small) {
     h1 {
         font-size: 3.5rem;
@@ -181,11 +200,20 @@ nav.footer-menu a {
         font-size: 1.8rem;
     }
 
+    .nav-links .current, 
+    .pages {
+        font-size: 1.8rem;
+    }
+
     .comment-reply-link {
         font-size: .8rem;
     }
 
     .comment-meta a {
+        font-size: .8rem;
+    }
+
+    .fn {
         font-size: .8rem;
     }
 
@@ -219,6 +247,7 @@ nav.footer-menu a {
     }
 }
 
+//min-width 800px
 @include breakpoint($mid) {
     h1 {
         font-size: 4rem;
@@ -248,11 +277,20 @@ nav.footer-menu a {
         font-size: 2rem;
     }
 
+    .nav-links .current,
+    .pages {
+        font-size: 2rem;
+    }
+
     .comment-reply-link {
         font-size: 1.4rem;
     }
 
     .comment-meta a {
+        font-size: 1.4rem;
+    }
+
+    .fn {
         font-size: 1.4rem;
     }
 
@@ -286,6 +324,7 @@ nav.footer-menu a {
     }
 }
 
+//min-width 900px
 @include breakpoint($medium) {
     h1 {
         font-size: 5rem;
@@ -315,11 +354,20 @@ nav.footer-menu a {
         font-size: 2.5rem;
     }
 
+    .nav-links .current,
+    .pages {
+        font-size: 2.5rem;
+    }
+
     .comment-reply-link {
         font-size: 1.8rem;
     }
 
     .comment-meta a {
+        font-size: 1.8rem;
+    }
+
+    .fn {
         font-size: 1.8rem;
     }
 
@@ -353,6 +401,7 @@ nav.footer-menu a {
     }
 }
 
+//min-width 1200px
 @include breakpoint($large) {
     h1 {
         font-size: 6rem;
@@ -382,11 +431,20 @@ nav.footer-menu a {
         font-size: 3rem;
     }
 
+    .nav-links .current,
+    .pages {
+        font-size: 3rem;
+    }
+
     .comment-reply-link {
         font-size: 2.2rem;
     }
 
     .comment-meta a {
+        font-size: 2.2rem;
+    }
+
+    .fn {
         font-size: 2.2rem;
     }
 
@@ -420,6 +478,7 @@ nav.footer-menu a {
     }
 }
 
+//min-width 1800px
 @include breakpoint($xlarge) {
     h1 {
         font-size: 7rem;
@@ -449,11 +508,20 @@ nav.footer-menu a {
         font-size: 4rem;
     }
 
+    .nav-links .current,
+    .pages {
+        font-size: 4rem;
+    }
+
     .comment-reply-link {
         font-size: 3.2rem;
     }
 
     .comment-meta a {
+        font-size: 3.2rem;
+    }
+
+    .fn {
         font-size: 3.2rem;
     }
 

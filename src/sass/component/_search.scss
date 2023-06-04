@@ -1,0 +1,47 @@
+.searchform input[type="text"]{
+    padding: 7px 10px;
+    border: 1px solid #C6C6C6;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.searchform input[type="submit"]{
+    padding: 1.1rem 1rem;
+    background: $color-gold;
+    color: $color-black;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+   
+}
+.searchform div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.searchform input[type=text]{
+    max-width: 50%;
+}
+.searchform input[type=submit]{
+    max-width: 50%;
+}
+
+.search-container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+}
+
+.main {
+    margin-top: 5rem;
+}
