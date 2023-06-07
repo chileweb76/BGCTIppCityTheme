@@ -133,9 +133,9 @@ function bgctippcity_customizer( $wp_customize ){
 
      // 3 Header Section
      $wp_customize->add_section(
-        'sec_header',
+        'sec_about',
         array(
-            'title' => 'Header Section'
+            'title' => 'About Section'
         )
     );
             // Header Title
@@ -217,5 +217,33 @@ function bgctippcity_customizer( $wp_customize ){
                     'type' => 'email'
                 )
             );
+
+    // 4 About Page
+        $wp_customize->add_section(
+            'sec_header',
+            array(
+                'title' => 'Header Section'
+            )
+        );
+            
+            // About Paragraph
+            $wp_customize->add_setting(
+                'set_about',
+                array(
+                    'type' => 'theme_mod',
+                    'default' => 'About Paragraph',
+                    'sanitize_callback' => 'sanitize_textarea_field'
+                )
+            );
+
+            $wp_customize->add_control(
+                'set_about',
+                array(
+                    'label' => 'About Paragraph',
+                    'description' => 'About Paragraph',
+                    'section' => 'sec_about',
+                    'type' => 'textarea'
+                )
+            );    
 }
 add_action( 'customize_register', 'bgctippcity_customizer');

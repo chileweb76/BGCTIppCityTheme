@@ -1,0 +1,14 @@
+.wp-block-group__inner-container {
+    margin-top: 5rem;
+}
+
+.wp-block-gallery.wp-block-gallery-3 {
+    gap: var(--wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 3rem ) ) );
+    margin: 5rem;
+}
+
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}

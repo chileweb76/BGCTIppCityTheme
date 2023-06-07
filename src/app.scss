@@ -47,7 +47,10 @@ body {
     font-family: $font-body;
     color: $color-grey;
     background-color: $color-black;
-    
+}
+
+:root {
+    --glsr-toggle-h: 2rem !important;
 }
 
 @import './sass/reset';
@@ -62,3 +65,8 @@ body {
 @import './sass/single';
 @import './sass/component/404';
 @import './sass/wp-added';
+@import './sass/about';
+@import './sass/gallery';
+@import './sass/component/placeholder-block';
+@import './sass/contact';
+@import './sass/reviews';

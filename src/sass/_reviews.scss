@@ -1,0 +1,39 @@
+.glsr-default form.glsr-form  {
+    margin: 5rem 15rem;
+}
+
+.glsr-input-email {
+    margin-bottom: 1rem !important;
+}
+
+.glsr-button {
+    background-color: $color-gold !important;
+    color: $color-black !important;
+}
+
+.glsr-toggle input[type=checkbox] {
+    background-color: $color-grey !important;
+}
+
+.glsr-review {
+   margin: auto;
+   background-color: $color-darkgrey;
+   color: whitesmoke;
+   padding: 2rem;
+   border-radius: 1rem;
+}
+
+.glsr-review-verified {
+    background-color: $color-black;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+@include xsmall($mid) {
+    .glsr-reviews {
+        width: 50%;
+        margin: auto;
+    }
+ 
+    
+}

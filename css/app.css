@@ -18,6 +18,10 @@ body {
   background-color: #232c33;
 }
 
+:root {
+  --glsr-toggle-h: 2rem !important;
+}
+
 /* CSS Reset =========================== */
 body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, fieldset, form, label {
   margin: 0;
@@ -55,11 +59,17 @@ h3 {
   font-size: 1.4rem;
 }
 
-h4 {
-  font-size: 1rem;
+h4,
+.inputlabel,
+.inputfield,
+.inputmessage,
+.button,
+.wpforms-field-label {
+  font-size: 1rem !important;
 }
 
-p {
+p,
+span.glsr-tag-value {
   font-size: 1.2rem;
   margin-top: 2rem;
 }
@@ -76,7 +86,8 @@ a:hover {
   font-size: 1rem;
 }
 
-.comment-reply-link {
+.comment-reply-link,
+span.glsr-tag-value {
   font-size: 0.4rem;
   margin-top: 1rem;
 }
@@ -134,8 +145,13 @@ nav.footer-menu a {
   h3 {
     font-size: 1.8rem;
   }
-  h4 {
-    font-size: 1.2rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 1.2rem !important;
   }
   p {
     font-size: 1.6rem;
@@ -147,7 +163,8 @@ nav.footer-menu a {
   .pages {
     font-size: 1.2rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 0.6rem;
   }
   .comment-meta a {
@@ -192,8 +209,13 @@ nav.footer-menu a {
   h3 {
     font-size: 2.5rem;
   }
-  h4 {
-    font-size: 1.8rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 1.8rem !important;
   }
   p {
     font-size: 1.8rem;
@@ -205,7 +227,8 @@ nav.footer-menu a {
   .pages {
     font-size: 1.8rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 0.8rem;
   }
   .comment-meta a {
@@ -250,8 +273,13 @@ nav.footer-menu a {
   h3 {
     font-size: 3rem;
   }
-  h4 {
-    font-size: 2rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 2rem !important;
   }
   p {
     font-size: 1.8rem;
@@ -263,7 +291,8 @@ nav.footer-menu a {
   .pages {
     font-size: 2rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 1.4rem;
   }
   .comment-meta a {
@@ -308,8 +337,13 @@ nav.footer-menu a {
   h3 {
     font-size: 3.5rem;
   }
-  h4 {
-    font-size: 2.5rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 2.5rem !important;
   }
   p {
     font-size: 2rem;
@@ -321,7 +355,8 @@ nav.footer-menu a {
   .pages {
     font-size: 2.5rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 1.8rem;
   }
   .comment-meta a {
@@ -366,8 +401,13 @@ nav.footer-menu a {
   h3 {
     font-size: 4.5rem;
   }
-  h4 {
-    font-size: 3rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 3rem !important;
   }
   p {
     font-size: 2.5rem;
@@ -379,7 +419,8 @@ nav.footer-menu a {
   .pages {
     font-size: 3rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 2.2rem;
   }
   .comment-meta a {
@@ -424,8 +465,13 @@ nav.footer-menu a {
   h3 {
     font-size: 5.5rem;
   }
-  h4 {
-    font-size: 4rem;
+  h4,
+  .inputlabel,
+  .inputfield,
+  .inputmessage,
+  .button,
+  .wpforms-field-label {
+    font-size: 4rem !important;
   }
   p {
     font-size: 3rem;
@@ -437,7 +483,8 @@ nav.footer-menu a {
   .pages {
     font-size: 4rem;
   }
-  .comment-reply-link {
+  .comment-reply-link,
+  span.glsr-tag-value {
     font-size: 3.2rem;
   }
   .comment-meta a {
@@ -521,7 +568,7 @@ li.current-menu-item a {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 3rem 3rem 5rem;
 }
 
 .footer-menu a {
@@ -540,7 +587,7 @@ li.current-menu-item a {
   text-align: center;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #7e7f9a;
+  background-color: #ffd700;
   color: #232c33;
   width: 90%;
   border-radius: 1rem;
@@ -698,7 +745,7 @@ li.current-menu-item a {
   text-align: center;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #7e7f9a;
+  background-color: #ffd700;
   color: #232c33;
   width: 40%;
   border-radius: 1rem;
@@ -922,4 +969,98 @@ a img.aligncenter {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */
+}
+
+.about-main {
+  margin-top: 5rem;
+}
+
+.about-container {
+  width: 65%;
+  margin: 3rem auto;
+  background-color: #ffd700;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.about {
+  color: #232c33;
+}
+
+.wp-block-group__inner-container {
+  margin-top: 5rem;
+}
+
+.wp-block-gallery.wp-block-gallery-3 {
+  gap: var(--wp--style--gallery-gap-default, var(--gallery-block--gutter-size, var(--wp--style--block-gap, 3rem)));
+  margin: 5rem;
+}
+
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+.placeholder {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.65rem;
+  background-color: linear-gradient(180deg, #FFD700, #FFE347);
+}
+
+div.wpforms-container-full {
+  margin-right: 20rem !important;
+  margin-left: 20rem !important;
+}
+
+div.wpforms-container-full input[type=submit]:not(:hover):not(:active), div.wpforms-container-full button[type=submit]:not(:hover):not(:active), div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+  background-color: #ffd700 !important;
+  color: #232c33 !important;
+}
+
+div.wpforms-container-full .wpforms-field-label {
+  color: #97a7b3 !important;
+}
+
+div.wpforms-container-full .wpforms-field-sublabel {
+  color: #97a7b3 !important;
+}
+
+.glsr-default form.glsr-form {
+  margin: 5rem 15rem;
+}
+
+.glsr-input-email {
+  margin-bottom: 1rem !important;
+}
+
+.glsr-button {
+  background-color: #ffd700 !important;
+  color: #232c33 !important;
+}
+
+.glsr-toggle input[type=checkbox] {
+  background-color: #97a7b3 !important;
+}
+
+.glsr-review {
+  margin: auto;
+  background-color: #7e7f9a;
+  color: whitesmoke;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.glsr-review-verified {
+  background-color: #232c33;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .glsr-reviews {
+    width: 50%;
+    margin: auto;
+  }
 }

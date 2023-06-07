@@ -1,0 +1,17 @@
+div.wpforms-container-full {
+    margin-right: 20rem !important;
+    margin-left: 20rem !important;
+}
+
+div.wpforms-container-full input[type=submit]:not(:hover):not(:active), div.wpforms-container-full button[type=submit]:not(:hover):not(:active), div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+    background-color: $color-gold !important;
+    color: $color-black !important;
+}
+
+div.wpforms-container-full .wpforms-field-label {
+    color: $color-grey !important;
+}
+
+div.wpforms-container-full .wpforms-field-sublabel {
+    color: $color-grey !important;
+}
