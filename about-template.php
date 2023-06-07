@@ -12,7 +12,7 @@ Template Name: About Template
         $about = get_theme_mod( 'set_about', 'About Paragraph' );
     ?>
     <div class="about-container">
-        <p class="about"><?php echo $about ?></p> 
+        <p class="about"><?php echo esc_html($about) ?></p> 
     </div>
 
 <?php get_footer(); ?>

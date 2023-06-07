@@ -64,7 +64,9 @@ h4,
 .inputfield,
 .inputmessage,
 .button,
-.wpforms-field-label {
+.wpforms-field-label,
+.glsr-label,
+label {
   font-size: 1rem !important;
 }
 
@@ -150,7 +152,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 1.2rem !important;
   }
   p {
@@ -164,8 +168,11 @@ nav.footer-menu a {
     font-size: 1.2rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 0.6rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 0.6rem !important;
   }
   .comment-meta a {
     font-size: 0.6rem;
@@ -214,7 +221,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 1.8rem !important;
   }
   p {
@@ -228,8 +237,11 @@ nav.footer-menu a {
     font-size: 1.8rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 0.8rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 0.8rem !important;
   }
   .comment-meta a {
     font-size: 0.8rem;
@@ -278,7 +290,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 2rem !important;
   }
   p {
@@ -292,8 +306,11 @@ nav.footer-menu a {
     font-size: 2rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 1.4rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 1.4rem !important;
   }
   .comment-meta a {
     font-size: 1.4rem;
@@ -342,7 +359,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 2.5rem !important;
   }
   p {
@@ -356,8 +375,11 @@ nav.footer-menu a {
     font-size: 2.5rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 1.8rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 1.8rem !important;
   }
   .comment-meta a {
     font-size: 1.8rem;
@@ -406,7 +428,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 3rem !important;
   }
   p {
@@ -420,8 +444,11 @@ nav.footer-menu a {
     font-size: 3rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 2.2rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 2.2rem !important;
   }
   .comment-meta a {
     font-size: 2.2rem;
@@ -470,7 +497,9 @@ nav.footer-menu a {
   .inputfield,
   .inputmessage,
   .button,
-  .wpforms-field-label {
+  .wpforms-field-label,
+  .glsr-label,
+  label {
     font-size: 4rem !important;
   }
   p {
@@ -484,8 +513,11 @@ nav.footer-menu a {
     font-size: 4rem;
   }
   .comment-reply-link,
-  span.glsr-tag-value {
-    font-size: 3.2rem;
+  span.glsr-tag-value,
+  .glsr-input-text,
+  .glsr-input-email,
+  .glsr-textarea {
+    font-size: 3.2rem !important;
   }
   .comment-meta a {
     font-size: 3.2rem;

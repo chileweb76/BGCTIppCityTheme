@@ -4,7 +4,7 @@
             <?php the_post_thumbnail() ?>
         </div>
             <div class="meta-info">
-                <p>Posted on<?php echo get_the_date(); ?> by  <?php the_author_posts_link(); ?></p>
+                <p>Posted on<?php echo esc_html(get_the_date()); ?> by  <?php the_author_posts_link(); ?></p>
                 <p>Categories: <?php the_category( ' ' ); ?></p>
                 <p>Tags: <?php the_tags( '', ', ' ); ?></p>     
             </div>

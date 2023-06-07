@@ -16,7 +16,7 @@
                     the_custom_logo(); 
                     }else{
                         ?>
-                            <a class="page-title" href="<?php echo home_url( '/' ); ?>"<span><?php bloginfo( 'name' ); ?></span></a>
+                            <a class="page-title" href="<?php echo esc_url(home_url( '/' )); ?>"<span><?php bloginfo( 'name' ); ?></span></a>
                             <p><?php bloginfo( 'description'); ?></p>
                         <?php
                     }
@@ -30,11 +30,11 @@
             ?>
 
             <div class="title"> 
-                <h1><?php echo $title1; ?> </h1>
-                <h2><?php echo $title2; ?></h2>
+                <h1><?php echo esc_html($title1); ?> </h1>
+                <h2><?php echo esc_html($title2); ?></h2>
                 <section class="contact-section"> 
-                    <a class="contact" href="tel:<?php echo $phone_number; ?>"> <?php echo $phone_number; ?> </a>
-                    <p class="contact"><?php echo $email; ?> </a>
+                    <a class="contact" href="tel:<?php echo esc_html($phone_number); ?>"> <?php echo esc_html($phone_number); ?> </a>
+                    <p class="contact"><?php echo esc_html($email); ?> </a>
                 </section>
             </div>
         </div>
@@ -47,7 +47,7 @@
     <?php 
         if(get_header_image()) {
         ?>
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+        <img src="<?php header_image(); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" alt="" />
         <?php 
         }
     ?>

@@ -10,13 +10,13 @@
         $subtitle = get_theme_mod( 'set_hero_subtitle', 'Add custom description' );
         ?>
         <section class="hero">
-            <img class="hero-image" src="<?php echo $left_image ?>" alt="Left side image"/>
+            <img class="hero-image" src="<?php echo esc_url($left_image) ?>" alt="Left side image"/>
             <div class="work-description"> 
-                <h2><?php echo $title1; ?></h2>
-                <h3><?php echo $title2; ?></h3>
-                <p><?php echo nl2br( $subtitle ); ?></p>
+                <h2><?php echo esc_html($title1); ?></h2>
+                <h3><?php echo esc_html($title2); ?></h3>
+                <p><?php echo nl2br(esc_html( $subtitle )); ?></p>
             </div>
-            <img class="hero-image" src="<?php echo $right_image ?>" alt="right side image" />
+            <img class="hero-image" src="<?php echo esc_url($right_image) ?>" alt="right side image" />
         </section>
         <section>
             <h2>Specialized in</h2>

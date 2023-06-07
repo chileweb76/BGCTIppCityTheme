@@ -18,8 +18,8 @@ add_action( 'wp_enqueue_scripts', 'bgctippcity_load_scripts' );
 function bgctippcity_config(){
     register_nav_menus(
         array(
-            'bgctippcity_main_menu' => 'Main Menu',
-            'bgctippcity_footer_menu' => 'Footer Menu'
+            'bgctippcity_main_menu' => esc_html('Main Menu'),
+            'bgctippcity_footer_menu' => esc_html('Footer Menu')
         )
     );
 
@@ -44,9 +44,9 @@ add_action( 'widgets_init', 'bgctippcity_sidebars' );
 function bgctippcity_sidebars(){
     register_sidebar(
         array(
-            'name'  => 'Blog Sidebar',
+            'name'  => esc_html('Blog Sidebar'),
             'id'    => 'sidebar-blog',
-            'description'   => 'This is the Blog Sidebar. You can add your widgets here. Add h4 headings to each widget',
+            'description'   => esc_html('This is the Blog Sidebar. You can add your widgets here. Add h4 headings to each widget'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -55,9 +55,9 @@ function bgctippcity_sidebars(){
     );
     register_sidebar(
         array(
-            'name'  => 'Spcialization One',
+            'name'  => esc_html('Spcialization One'),
             'id'    => 'specialized-one',
-            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'description'   => esc_html('This is the Spcialization Widget area.. You can add your widgets here. '),
             'before_widget' => '<div class="specialized-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -66,9 +66,9 @@ function bgctippcity_sidebars(){
     );
     register_sidebar(
         array(
-            'name'  => 'Spcialization Two',
+            'name'  => esc_html('Spcialization Two'),
             'id'    => 'specialized-two',
-            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'description'   => esc_html('This is the Spcialization Widget area.. You can add your widgets here. '),
             'before_widget' => '<div class="specialized-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -77,9 +77,9 @@ function bgctippcity_sidebars(){
     );
     register_sidebar(
         array(
-            'name'  => 'Spcialization Three',
+            'name'  => esc_html('Spcialization Three'),
             'id'    => 'specialized-three',
-            'description'   => 'This is the Spcialization Widget area.. You can add your widgets here. ',
+            'description'   => esc_html('This is the Spcialization Widget area.. You can add your widgets here. '),
             'before_widget' => '<div class="specialized-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
