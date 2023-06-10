@@ -8,6 +8,10 @@ h1 {
     margin: 1rem 0;
 }
 
+.wp-block-heading {
+    margin-top: 5rem;
+}
+
 h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -36,7 +40,8 @@ h4,
 }
 
 p,
-span.glsr-tag-value{
+span.glsr-tag-value,
+.wpforms-field-sublabel {
     font-size: 1.2rem;
     margin-top: 2rem;
 }
@@ -131,7 +136,8 @@ nav.footer-menu a {
         font-size: 1.2rem !important;
     }
 
-    p {
+    p,
+    .wpforms-field-sublabel {
         font-size: 1.6rem;
     }
 
@@ -148,6 +154,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: .6rem !important;
     }
@@ -219,8 +226,9 @@ nav.footer-menu a {
         font-size: 1.8rem !important;
     }
 
-    p {
-        font-size: 1.8rem;
+    p,
+    .wpforms-field-sublabel {
+        font-size: 1.8rem !important;
     }
 
     a {
@@ -236,6 +244,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: .8rem !important;
     }
@@ -307,8 +316,9 @@ nav.footer-menu a {
         font-size: 2rem !important;
     }
 
-    p {
-        font-size: 1.8rem;
+    p,
+    .wpforms-field-sublabel {
+        font-size: 1.8rem !important;
     }
 
     a {
@@ -324,6 +334,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: 1.4rem !important;
     }
@@ -395,8 +406,9 @@ nav.footer-menu a {
         font-size: 2.5rem !important;
     }
 
-    p{
-        font-size: 2rem;
+    p,
+    .wpforms-field-sublabel{
+        font-size: 2rem !important;
     }
 
     a {
@@ -412,6 +424,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: 1.8rem !important;
     }
@@ -483,8 +496,9 @@ nav.footer-menu a {
         font-size: 3rem !important;
     }
 
-    p {
-        font-size: 2.5rem;
+    p,
+    .wpforms-field-sublabel {
+        font-size: 2.5rem !important;
     }
 
     a {
@@ -500,6 +514,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: 2.2rem !important;
     }
@@ -571,8 +586,9 @@ nav.footer-menu a {
         font-size: 4rem !important;
     }
     
-    p {
-        font-size: 3rem;
+    p,
+    .wpforms-field-sublabel {
+        font-size: 3rem !important;
     }
 
     a {
@@ -588,6 +604,7 @@ nav.footer-menu a {
     span.glsr-tag-value,
     .glsr-input-text,
     .glsr-input-email,
+    .glsr-button,
     .glsr-textarea {
         font-size: 3.2rem !important;
     }

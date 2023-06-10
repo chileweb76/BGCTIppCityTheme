@@ -44,6 +44,10 @@ h1 {
   margin: 1rem 0;
 }
 
+.wp-block-heading {
+  margin-top: 5rem;
+}
+
 h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -71,7 +75,8 @@ label {
 }
 
 p,
-span.glsr-tag-value {
+span.glsr-tag-value,
+.wpforms-field-sublabel {
   font-size: 1.2rem;
   margin-top: 2rem;
 }
@@ -157,7 +162,8 @@ nav.footer-menu a {
   label {
     font-size: 1.2rem !important;
   }
-  p {
+  p,
+  .wpforms-field-sublabel {
     font-size: 1.6rem;
   }
   a {
@@ -171,6 +177,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 0.6rem !important;
   }
@@ -226,8 +233,9 @@ nav.footer-menu a {
   label {
     font-size: 1.8rem !important;
   }
-  p {
-    font-size: 1.8rem;
+  p,
+  .wpforms-field-sublabel {
+    font-size: 1.8rem !important;
   }
   a {
     font-size: 1.8rem;
@@ -240,6 +248,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 0.8rem !important;
   }
@@ -295,8 +304,9 @@ nav.footer-menu a {
   label {
     font-size: 2rem !important;
   }
-  p {
-    font-size: 1.8rem;
+  p,
+  .wpforms-field-sublabel {
+    font-size: 1.8rem !important;
   }
   a {
     font-size: 2rem;
@@ -309,6 +319,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 1.4rem !important;
   }
@@ -364,8 +375,9 @@ nav.footer-menu a {
   label {
     font-size: 2.5rem !important;
   }
-  p {
-    font-size: 2rem;
+  p,
+  .wpforms-field-sublabel {
+    font-size: 2rem !important;
   }
   a {
     font-size: 2.5rem;
@@ -378,6 +390,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 1.8rem !important;
   }
@@ -433,8 +446,9 @@ nav.footer-menu a {
   label {
     font-size: 3rem !important;
   }
-  p {
-    font-size: 2.5rem;
+  p,
+  .wpforms-field-sublabel {
+    font-size: 2.5rem !important;
   }
   a {
     font-size: 3rem;
@@ -447,6 +461,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 2.2rem !important;
   }
@@ -502,8 +517,9 @@ nav.footer-menu a {
   label {
     font-size: 4rem !important;
   }
-  p {
-    font-size: 3rem;
+  p,
+  .wpforms-field-sublabel {
+    font-size: 3rem !important;
   }
   a {
     font-size: 4rem;
@@ -516,6 +532,7 @@ nav.footer-menu a {
   span.glsr-tag-value,
   .glsr-input-text,
   .glsr-input-email,
+  .glsr-button,
   .glsr-textarea {
     font-size: 3.2rem !important;
   }
@@ -1028,6 +1045,11 @@ a img.aligncenter {
   margin: 5rem;
 }
 
+.wp-block-gallery.wp-block-gallery-4 {
+  gap: var(--wp--style--gallery-gap-default, var(--gallery-block--gutter-size, var(--wp--style--block-gap, 3rem)));
+  margin: 5rem;
+}
+
 .wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
   width: 75%;
   height: 75%;
@@ -1041,7 +1063,7 @@ a img.aligncenter {
   background-color: linear-gradient(180deg, #FFD700, #FFE347);
 }
 
-div.wpforms-container-full {
+div.wpforms-field-container {
   margin-right: 20rem !important;
   margin-left: 20rem !important;
 }
@@ -1059,6 +1081,18 @@ div.wpforms-container-full .wpforms-field-sublabel {
   color: #97a7b3 !important;
 }
 
+.wpforms-submit-container,
+.wpforms-recaptcha-container {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 600px) {
+  div.wpforms-field-container {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+}
 .glsr-default form.glsr-form {
   margin: 5rem 15rem;
 }

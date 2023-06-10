@@ -1,4 +1,4 @@
-div.wpforms-container-full {
+div.wpforms-field-container {
     margin-right: 20rem !important;
     margin-left: 20rem !important;
 }
@@ -15,3 +15,18 @@ div.wpforms-container-full .wpforms-field-label {
 div.wpforms-container-full .wpforms-field-sublabel {
     color: $color-grey !important;
 }
+
+.wpforms-submit-container,
+.wpforms-recaptcha-container {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+@include xsmall($xsmall) {
+    div.wpforms-field-container{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+    }
+}
+
